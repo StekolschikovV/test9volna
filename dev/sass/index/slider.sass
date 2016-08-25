@@ -1,0 +1,127 @@
+.slider
+  position: relative
+  display: flex
+  overflow: hidden
+  .slide
+    position: relative
+    .text
+      position: absolute
+      width: 50%
+      height: 100%
+      right: 0
+      top: 0
+      padding: 5%
+      color: white
+      h2
+        font-family: 'Roboto'
+        font-weight: 400
+        text-transform: uppercase
+        margin-bottom: 35px
+      h5
+        font-family: 'Roboto'
+        font-weight: 300
+        margin-bottom: 35px
+        a
+          font-family: 'Roboto'
+          font-weight: 600
+          text-transform: uppercase
+    img
+  //width: calc(100vw - 17px)
+  .arr-left, .arr-right
+    position: absolute
+    height: 50px
+    width: 50px
+    z-index: 9
+    top: 0
+    bottom: 0
+    margin: auto
+    border-radius: 50px
+    border: 2px solid white
+    //transition-duration: 0.5s
+    i
+      margin-top: 12px
+      font-size: 25px
+      font-weight: 100
+      color: white
+    &:hover
+      background: #50cbbe
+  .arr-left
+    left: 5%
+    i
+      margin-left: 13px
+  .arr-right
+    right: 5%
+    i
+      margin-left: 17px
+@media (max-width: 1000px)
+  .slider
+    .slide
+      .text
+        padding: 2%
+@media (max-width: 840px)
+  .slider
+    .slide
+      .text
+        padding: 0%
+        h2, h5
+          margin-bottom: 10px
+@media (max-width: 700px)
+  .slider
+    .slide
+      .text
+        width: 100%
+        padding: 10px 90px
+        h2, h5
+          margin-bottom: 10px
+@media (max-width: 700px)
+  .slider
+    .slide
+      .text
+        width: 100%
+        padding: 0px 90px
+        h2, h5
+          margin-bottom: 10px
+@media (max-width: 700px)
+  .slider
+    .slide
+      .text
+        width: 100%
+        padding: 40px 60px
+        text-align: center
+        h5
+          display: none
+@media (max-width: 550px)
+  .slider
+    .slide
+      .text
+        width: 100%
+        padding: 0px 60px
+        text-align: center
+@media (max-width: 450px)
+  .slider
+    .slide
+      .text
+        width: 100%
+        padding: 10px 60px
+        text-align: center
+        h2
+          padding: 0
+          margin: 0
+@media (max-width: 400px)
+  .slider
+    .slide
+      .text
+        width: 100%
+        padding: 10px 60px
+        text-align: center
+        h2
+          font-size: 20pt
+@media (max-width: 400px)
+  .slider
+    .slide
+      .text
+        width: 100%
+        padding: 15px 60px
+        text-align: center
+        h2
+          font-size: 15pt

@@ -1,0 +1,226 @@
+@import "index/preloader"
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700'
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400,700'
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i'
+
+*
+  font-family: 'Oswald'
+  color: #333333
+  outline: none
+h1
+  font-size: 48pt
+h2
+  font-size: 40pt
+h3
+  font-size: 30pt
+h4
+  font-size: 14pt !important
+h6
+  font-size: 16pt !important
+h5
+  font-size: 20pt
+
+
+@import "index/header"
+@import "index/top-img"
+@import "index/why-we"
+@import "index/slider"
+@import "index/our-portfolio"
+@import "index/price"
+@import "index/map"
+@import "index/footer"
+
+.mob-menu
+  display: none
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  margin: auto
+  height: 120px
+  width: 40px
+  text-align: center
+  z-index: 9
+  background: red
+  font-size: 20pt
+  background-color: rgba(10, 19, 227, 0.9)
+  animation: hue 3s infinite alternate
+  background-image: linear-gradient( rgba(52,201,227,0.9), rgba(102,204,153,0.9) )
+  transition-duration: 0.5s
+  cursor: pointer
+  i
+    color: white
+    transition-duration: 0.5s
+    &:hover
+      color: darken(#f0f0f2, 10)
+@media (max-width: 1200px)
+  .mob-menu
+    display: block
+
+.coll-back-page
+  transition-duration: 0.5s
+  position: fixed
+  top: 0
+  z-index: 10
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.9)
+  .coll-back-page-container
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    background: white
+    padding: 20px
+    width: 300px
+    height: 270px
+    h3
+      text-transform: uppercase
+      font-family: 'Roboto'
+      font-weight: 100
+      text-align: center
+      margin-top: 0
+      padding-top: 0
+      margin-bottom: 30px
+    input
+      width: 100%
+      border: 1px solid #f1f1f1
+      padding: 10px
+      margin-bottom: 10px
+      text-align: center
+    button
+      text-transform: uppercase
+      border: 0
+      width: 100%
+      color: white
+      font-weight: bold
+      margin-top: 7px
+      padding-top: 15px
+      padding-bottom: 15px
+      text-align: center
+      font-size: 12pt
+      font-family: 'Roboto'
+      background-color: rgba(10, 19, 227, 0.9)
+      animation: hue 3s infinite alternate
+      background-image: linear-gradient( rgba(52,201,227,0.9), rgba(102,204,153,0.9) )
+      transition-duration: 0.5s
+      &:hover
+        border-radius: 30px
+  .close
+    opacity: 1
+    position: absolute
+    top: -15px
+    right: -15px
+    background: rgb(232, 0, 0)
+    border-radius: 50px
+    width: 35px
+    height: 35px
+    text-align: center
+    opacity: 1 !important
+
+    i
+      transition-duration: 0.5s
+      margin-top: 6px !important
+      color: white
+      opacity: 1 !important
+      &:hover
+        opacity: 1 !important
+        color: darken(white, 20)
+
+
+
+
+.menu-page
+  transition-duration: 0.5s
+  position: fixed
+  top: 0
+  z-index: 10
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,0.9)
+  .menu-page-container
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    background: white
+    padding: 20px
+    width: 300px
+    height: 200px
+    h3
+      text-transform: uppercase
+      font-family: 'Roboto'
+      font-weight: 100
+      text-align: center
+      margin-top: 0
+      padding-top: 0
+      margin-bottom: 30px
+    h4
+      text-transform: uppercase
+      font-family: 'Roboto'
+      text-align: center
+      cursor: pointer
+      transition-duration: 0.5s
+      &:hover
+        color: #50cbbe
+    input
+      width: 100%
+      border: 1px solid #f1f1f1
+      padding: 10px
+      margin-bottom: 10px
+      text-align: center
+    button
+      text-transform: uppercase
+      border: 0
+      width: 100%
+      color: white
+      font-weight: bold
+      margin-top: 7px
+      padding-top: 15px
+      padding-bottom: 15px
+      text-align: center
+      font-size: 12pt
+      font-family: 'Roboto'
+      background-color: rgba(10, 19, 227, 0.9)
+      animation: hue 3s infinite alternate
+      background-image: linear-gradient( rgba(52,201,227,0.9), rgba(102,204,153,0.9) )
+      transition-duration: 0.5s
+      &:hover
+        border-radius: 30px
+  .close
+    opacity: 1
+    position: absolute
+    top: -15px
+    right: -15px
+    background: rgb(232, 0, 0)
+    border-radius: 50px
+    width: 35px
+    height: 35px
+    text-align: center
+    opacity: 1 !important
+    i
+      transition-duration: 0.5s
+      margin-top: 6px !important
+      color: white
+      opacity: 1 !important
+      &:hover
+        opacity: 1 !important
+        color: darken(white, 20)
+
+
+
+
+
+
+
+.display-none
+  transition-duration: 0.5s
+  display: none
+.opacity-null
+  opacity: 0
+
+
