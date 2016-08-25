@@ -1,0 +1,123 @@
+header nav {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background: white;
+  padding: 0;
+  height: 68px;
+}
+
+header nav #logo {
+  font-size: 26pt;
+  color: #3b3b3b;
+}
+
+header nav #logo .logo-text {
+  color: #7ed7ce;
+}
+
+header nav #logo .text {
+  font-family: 'Roboto';
+  font-size: 8pt;
+  margin-left: 15px;
+  line-height: 0.5;
+}
+
+header nav ul.menu {
+  font-family: 'Roboto Slab';
+  font-weight: 100;
+  padding: 23px 0;
+}
+
+header nav ul.menu li {
+  padding: 30px 10px;
+  display: inline;
+  margin: 0 -2px;
+  font-size: 10pt;
+  font-family: 'Roboto';
+  font-weight: 400;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+header nav ul.menu li:hover {
+  color: #4acbc6;
+  background: #f5f6f9;
+  padding: 30px 10px 22px 10px;
+  border-bottom: 5px solid #4acbc6;
+}
+
+header nav ul.menu .select {
+  color: #4acbc6;
+  background: #f5f6f9;
+  padding: 30px 10px 22px 10px;
+  border-bottom: 5px solid #4acbc6;
+}
+
+header nav ul.phone {
+  padding: 23px 1px;
+  text-align: right;
+}
+
+header nav ul.phone li {
+  display: inline;
+  font-size: 10pt;
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+header nav ul.phone li i {
+  color: #737475;
+}
+
+header nav .coll-back {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin-top: 7px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 12pt;
+  font-family: 'Roboto';
+  background-color: rgba(10, 19, 227, 0.9);
+  animation: hue 3s infinite alternate;
+  background-image: linear-gradient(rgba(52, 201, 227, 0.9), rgba(102, 204, 153, 0.9));
+  transition-duration: 0.5s;
+}
+
+header nav .coll-back:hover {
+  border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+  .phone-container {
+    display: none;
+  }
+  .logo-container {
+    width: 100% !important;
+    text-align: center;
+  }
+  .logo-container .text {
+    margin: 0;
+  }
+}
+
+@keyframes hue {
+  20% {
+    background-color: rgba(227, 8, 0, 0.9);
+  }
+  40% {
+    background-color: rgba(114, 227, 12, 0.9);
+  }
+  60% {
+    background-color: rgba(227, 219, 29, 0.9);
+  }
+  80% {
+    background-color: rgba(10, 19, 227, 0.9);
+  }
+  100% {
+    background-color: rgba(227, 8, 0, 0.9);
+  }
+}

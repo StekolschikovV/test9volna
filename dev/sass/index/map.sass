@@ -1,0 +1,54 @@
+.map
+  position: relative
+  #googleMap
+    min-width: 100%
+    height: 30vw
+    min-height: 400px
+  .order
+    background: white
+    padding: 20px
+    width: 300px
+    height: 310px
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto
+    left: 10%
+    h3
+      text-transform: uppercase
+      font-family: 'Roboto'
+      font-weight: 100
+      text-align: center
+      margin-top: 0
+      padding-top: 0
+      margin-bottom: 30px
+    input
+      width: 100%
+      border: 1px solid #f1f1f1
+      padding: 10px
+      margin-bottom: 10px
+      text-align: center
+    button
+      text-transform: uppercase
+      border: 0
+      width: 100%
+      color: white
+      font-weight: bold
+      margin-top: 7px
+      padding-top: 15px
+      padding-bottom: 15px
+      text-align: center
+      font-size: 12pt
+      font-family: 'Roboto'
+      background-color: rgba(10, 19, 227, 0.9)
+      animation: hue 3s infinite alternate
+      background-image: linear-gradient( rgba(52,201,227,0.9), rgba(102,204,153,0.9) )
+      transition-duration: 0.5s
+      &:hover
+        border-radius: 30px
+
+@media (max-width: 770px)
+  .map
+    .order
+      left: 0 !important
+      right: 0 !important
